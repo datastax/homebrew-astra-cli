@@ -2,7 +2,7 @@ class AstraCli < Formula
   desc "Command Line Interface for DataStax Astra"
   homepage "https://awesome-astra.github.io/docs/pages/astra/astra-cli/"
   url "https://github.com/datastax/astra-cli/releases/download/0.1/astra-cli-0.1-mac.tar.gz"
-  sha256 "5bfbcc258de51859f19b6dc82cb54e01136c2bb3ec1b30a7fb59f426fda27d81"
+  sha256 "a5ded836246cf775ab4068b79528b60c245f2f2a57d451f6dfe97b6b05622a64"
   license "Apache-2.0"
 
   #depends_on "openjdk@11" # For DsBulk and PulsarShell
