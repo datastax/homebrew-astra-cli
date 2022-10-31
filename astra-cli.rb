@@ -5,7 +5,7 @@ class AstraCli < Formula
   sha256 "5bfbcc258de51859f19b6dc82cb54e01136c2bb3ec1b30a7fb59f426fda27d81"
   license "Apache-2.0"
 
-  depends_on "pkg-config"  # For DsBulk and PulsarShell
+  depends_on "openjdk@11" # For DsBulk and PulsarShell
   depends_on "python@3.10" # For CqlShell
 
   bottle do
