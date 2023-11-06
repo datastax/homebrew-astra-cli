@@ -3,7 +3,7 @@ class AstraCli < Formula
   homepage "https://awesome-astra.github.io/docs/pages/astra/astra-cli/"
   url "https://github.com/datastax/astra-cli.git",
       tag:      "0.5",
-      revision: "1be2c741ad49f87375f907f4a289a671b48af942"
+      revision: "49e0d55a4f98f6f2544c0155e438d790731fb0b8"
   license "Apache-2.0"
   head "https://github.com/datastax/astra-cli.git", branch: "main"
 
