@@ -9,10 +9,10 @@ class AstraCli < Formula
 
 bottle do
     root_url "https://github.com/datastax/astra-cli/releases/download/0.5"
-    #sha256 cellar: :any_skip_relocation, arm64_sonoma:   "764647e8037c37b4cd8f6b80e4cff46fa75df983cf5049cd917f5c536de5fcf8"
-    #sha256 cellar: :any_skip_relocation, arm64_ventura:  "764647e8037c37b4cd8f6b80e4cff46fa75df983cf5049cd917f5c536de5fcf8"
-    #sha256 cellar: :any_skip_relocation, arm64_monterey: "764647e8037c37b4cd8f6b80e4cff46fa75df983cf5049cd917f5c536de5fcf8"
-    #sha256 cellar: :any_skip_relocation, arm64_big_sur:  "764647e8037c37b4cd8f6b80e4cff46fa75df983cf5049cd917f5c536de5fcf8"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma:   "8567fc1e06074085857455c4f6da6f1fd2f14addba5ce0e1595adf2c6607304e"
+    sha256 cellar: :any_skip_relocation, arm64_ventura:  "8567fc1e06074085857455c4f6da6f1fd2f14addba5ce0e1595adf2c6607304e"
+    sha256 cellar: :any_skip_relocation, arm64_monterey: "8567fc1e06074085857455c4f6da6f1fd2f14addba5ce0e1595adf2c6607304e"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "8567fc1e06074085857455c4f6da6f1fd2f14addba5ce0e1595adf2c6607304e"
     sha256 cellar: :any_skip_relocation, sonoma:         "764647e8037c37b4cd8f6b80e4cff46fa75df983cf5049cd917f5c536de5fcf8"
     sha256 cellar: :any_skip_relocation, ventura:        "764647e8037c37b4cd8f6b80e4cff46fa75df983cf5049cd917f5c536de5fcf8"
     sha256 cellar: :any_skip_relocation, monterey:       "764647e8037c37b4cd8f6b80e4cff46fa75df983cf5049cd917f5c536de5fcf8"
