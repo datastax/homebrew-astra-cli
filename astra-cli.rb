@@ -36,14 +36,14 @@ bottle do
 
   def caveats
     <<~EOS
-      ------------------------
-        ENABLE AUTOCOMPLETION
-      -------------------------
+      \033[1;34m------------------------\033[0m
+      \033[1;34m  ENABLE AUTOCOMPLETION\033[0m
+      \033[1;34m-------------------------\033[0m
       To enable Bash completion for Astra CLI (and other brew formulae when enable, add the following to your shell configuration file (e.g. ~/.zshrc):
       
-      if [ -f  /opt/homebrew/etc/bash_completion.d ]; then
-        .  /opt/homebrew/etc/bash_completion.d
-      fi
+      \033[1;32mif [ -f  /opt/homebrew/etc/bash_completion.d ]; then\033[0m
+      \033[1;32m  .  /opt/homebrew/etc/bash_completion.d\033[0m
+      \033[1;32mfi\033[0m
 
       Once added, reload your shell or run:
 
@@ -51,12 +51,11 @@ bottle do
 
       This will ensure the Bash completion script for Astra CLI is loaded.
 
-      -------------------
-       SPECIAL COMMANDS
-      -------------------
+      \033[1;34m-------------------\033[0m
+      \033[1;34m SPECIAL COMMANDS\033[0m
+      \033[1;34m-------------------\033[0m
       
       - CQLSH: You must have python 3.7+ but less than 3.12, cqlsh is still not compatible with 3.12, downgrade if needed
-      
       - DSBULK: You must have java11+ installm the cli is pulling regular dsbulk
       
     EOS
