@@ -22,7 +22,7 @@ bottle do
     sha256 cellar: :any_skip_relocation, high_sierra:    "dfdbc94a9f4eae1443740786df70bd217a1b1275a72ad51a038f71e1fe06b84c"
     sha256 cellar: :any_skip_relocation, sierra:         "dfdbc94a9f4eae1443740786df70bd217a1b1275a72ad51a038f71e1fe06b84c"
     sha256 cellar: :any_skip_relocation, el_capitan:     "dfdbc94a9f4eae1443740786df70bd217a1b1275a72ad51a038f71e1fe06b84c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "b7c2e477e04b1fb774089864d98608a9ff7222859a0d10ea4e0279b56bf8e5cc"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "5c677e83ecef4f479353901c0bade4d1da20531cb1aae93b8ff92879789f6358"
   end
 
   def install
