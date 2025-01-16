@@ -31,7 +31,7 @@ bottle do
     system "script/build"
     system "script/install", prefix
 
-    bash_completion.install "astra-init.sh" => "astra-cli"
+    bash_completion.install "contrib/completion/astra-cli.bash" => "astra-cli"
   end
 
   def caveats
