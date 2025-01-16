@@ -35,7 +35,31 @@ bottle do
   end
 
   def caveats
-    "You must have python 3.7+ to use cqlsh and java11+ to use dsbulk"
+    <<~EOS
+      ------------------------
+        ENABLE AUTOCOMPLETION
+      -------------------------
+      To enable Bash completion for Astra CLI (and other brew formulae when enable, add the following to your shell configuration file (e.g. ~/.zshrc):
+      
+      if [ -f  /opt/homebrew/etc/bash_completion.d ]; then
+        .  /opt/homebrew/etc/bash_completion.d
+      fi
+
+      Once added, reload your shell or run:
+
+      source /opt/homebrew/etc/bash_completion.d
+
+      This will ensure the Bash completion script for Astra CLI is loaded.
+
+      -------------------
+       SPECIAL COMMANDS
+      -------------------
+      
+      - CQLSH: You must have python 3.7+ but less than 3.12, cqlsh is still not compatible with 3.12, downgrade if needed
+      
+      - DSBULK: You must have java11+ installm the cli is pulling regular dsbulk
+      
+    EOS
   end
 
 end
