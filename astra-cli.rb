@@ -7,7 +7,10 @@ class AstraCli < Formula
   license "Apache-2.0"
   head "https://github.com/datastax/astra-cli.git", branch: "main"
 
-bottle do
+  deprecate! date: "2025-11-11", because: "has been replaced by the newer 'astra' formula for Astra CLI v1.x."
+  conflicts_with "astra-canary", because: "'astra-canary' is a formula for the newer v1.x Astra CLI" 
+
+  bottle do
     root_url "https://github.com/datastax/astra-cli/releases/download/0.6"
     sha256 cellar: :any_skip_relocation, arm64_sonoma:   "14a6825a8d216120dd40fefbcb1b1ed407c6dd3a8349fb818c4687f82cd3ceea"
     sha256 cellar: :any_skip_relocation, arm64_ventura:  "14a6825a8d216120dd40fefbcb1b1ed407c6dd3a8349fb818c4687f82cd3ceea"
@@ -36,8 +39,8 @@ bottle do
 
   def caveats
     <<~EOS
-      \033[1;34m------------------------\033[0m
-      \033[1;34m  ENABLE AUTOCOMPLETION\033[0m
+      \033[1;34m-------------------------\033[0m
+      \033[1;34m  ENABLE AUTOCOMPLETION. \033[0m
       \033[1;34m-------------------------\033[0m
       To enable Bash completion for Astra CLI (and other brew formulae when enable, add the following to your shell configuration file (e.g. ~/.zshrc):
       
@@ -52,7 +55,7 @@ bottle do
       This will ensure the Bash completion script for Astra CLI is loaded.
 
       \033[1;34m-------------------\033[0m
-      \033[1;34m SPECIAL COMMANDS\033[0m
+      \033[1;34m SPECIAL COMMANDS. \033[0m
       \033[1;34m-------------------\033[0m
       
       - CQLSH: You must have python 3.7+ but less than 3.12, cqlsh is still not compatible with 3.12, downgrade if needed
@@ -60,5 +63,4 @@ bottle do
       
     EOS
   end
-
 end
