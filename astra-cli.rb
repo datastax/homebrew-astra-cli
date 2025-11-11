@@ -9,6 +9,7 @@ class AstraCli < Formula
 
   deprecate! date: "2025-11-11", because: "has been replaced by the newer 'astra' formula for Astra CLI v1.x."
   conflicts_with "astra-canary", because: "'astra-canary' is a formula for the newer v1.x Astra CLI" 
+  conflicts_with "astra", because: "'astra' is a formula for the newer v1.x Astra CLI" 
 
   bottle do
     root_url "https://github.com/datastax/astra-cli/releases/download/0.6"

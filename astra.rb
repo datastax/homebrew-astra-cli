@@ -1,12 +1,12 @@
-class AstraCanary < Formula
-  desc "Command Line Interface for DataStax Astra (Canary version–not guaranteed to be stable)"
+class Astra < Formula
+  desc "Command Line Interface for DataStax Astra"
   homepage "https://docs.datastax.com/en/astra-cli"
   version "1.0.0"
   license "Apache-2.0"
   head "https://github.com/datastax/astra-cli.git", branch: "main"
 
   conflicts_with "astra-cli", because: "'astra-cli' is the formula for the legacy v0.x Astra CLI. \033[1mPlease uninstall 'astra-cli' to continue.\033[0m" 
-  conflicts_with "astra", because: "'astra' is the stable build of Astra CLI. \033[1mPlease uninstall 'astra' to continue.\033[0m" 
+  conflicts_with "astra-canary", because: "'astra-canary' is the canary build of Astra CLI. \033[1mPlease uninstall 'astra-canary' to continue.\033[0m" 
 
   on_macos do
     on_arm do
