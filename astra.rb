@@ -1,7 +1,7 @@
 class Astra < Formula
   desc "Command Line Interface for DataStax Astra"
   homepage "https://docs.datastax.com/en/astra-cli"
-  version "1.0.0"
+  version "1.0.1"
   license "Apache-2.0"
   head "https://github.com/datastax/astra-cli.git", branch: "main"
 
@@ -11,24 +11,24 @@ class Astra < Formula
   on_macos do
     on_arm do
       url "https://github.com/datastax/astra-cli/releases/download/v#{version}/astra-macos-arm64.tar.gz"
-      sha256 "cd62f37999d7fe2b500372d2fa22d56427022d37be8086c21f72d387f24baa77"
+      sha256 "9db7de4ebfb7d7184a8af3aee2575bd45c68abd00446cf4c013a809ef01b3606"
     end
 
     on_intel do
       url "https://github.com/datastax/astra-cli/releases/download/v#{version}/astra-macos-x86_64.tar.gz"
-      sha256 "026d7b4cebce1e6e78fd1e7e4b5f8468861cd72deaded06a87baacf4c31044fd"
+      sha256 "522076050a80bdfa2096af987e9b6c4ca8df13e62403a30d1a52b600c499dd0c"
     end
   end
   
   on_linux do
     on_arm do
       url "https://github.com/datastax/astra-cli/releases/download/v#{version}/astra-linux-arm64.tar.gz"
-      sha256 "76f7b1ea23fd1c864405c6a052fa11cc5c0405222c4b57e05259ce07167bc5de"
+      sha256 "b12751e6864c7b9b656982a1cfc047bdc28a9f8cde0163a307800d0e76085aab"
     end
 
     on_intel do
       url "https://github.com/datastax/astra-cli/releases/download/v#{version}/astra-linux-x86_64.tar.gz"
-      sha256 "39000e000028ca33debe2fc95cbe4022924a5cb2030b40c84c52ee8337b64847"
+      sha256 "5037c3c681bc203d874f32242e9bdbaf0788126d887ddab83d9861ee62a88455"
     end
   end
   
